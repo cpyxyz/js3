@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Insurance</title>
+    <script src="src/controller/initialize.js"></script>
+    <script src="src/model/Insurance.js"></script>
+    <script src="src/view/create.js"></script>
+    <script>
+        window.addEventListener('load', init.view.createInsurance.home);
+    </script>
+</head>
+<style>
+    #form {
+        background-color: darkgray;
+
+    }
+</style>
+
+
+<body>
+    <center>
+        <div id="form">
+            <h1>Insurance</h1>
+            <hr>
+            <form id="insurance">
+
+                <p>
+                    <label>First Name: <input name="fname" /></label>
+                </p>
+                <p>
+                    <label>Last Name: <input name="lname" /></label>
+                </p>
+                <p>
+                    <label>Vehicle Number: <input name="vnumber" /></label>
+                </p>
+                <p>
+                    <label>Insurance Number: <input name="inumber" /></label>
+                </p>
+                <p><label>Vehicle Type: </label>
+                    <input type="radio" name="type" value="Bike">Bike</input>
+                    <input type="radio" name="type" value="Car">Car</input>
+                    </label>
+                </p>
+                <p>
+                    <label>Insurance Type: </label>
+                    <br><label>
+                        <input type="radio" name="type" value="First Party" />First Party</label>
+                    <label>
+                        <input type="radio" name="type" value="Third Party"></input>Third Party</label>
+                    </label>
+                </p>
+
+                <p><button type="button" name="commit">Submit</button></p>
+            </form>
+        </div>
+    </center>
+</body>
+
+
+</html>
